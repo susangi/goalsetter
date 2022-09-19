@@ -4,6 +4,10 @@ const port = process.env.PORT || 5000; // get port from env or not setup env get
 
 const app = express();
 
+//middlewares for request body for raw JSON and encoded
+app.use(express.json());
+app.use(express.urlencoded({extended : false}))
+
 //routes start
 
 //export goalRoutes
