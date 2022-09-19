@@ -5,8 +5,8 @@ const port = process.env.PORT || 5000; // get port from env or not setup env get
 const app = express();
 
 //routes start
-app.get('/api/goals',(req,res) => {
-	res.status(200).json({message : 'GET GOALS'});
-})
+
+//export goalRoutes
+app.use('/api/goals', require('./routes/goalRoutes'));
 
 app.listen(port, () => console.log(`Server start on port ${port}`));
