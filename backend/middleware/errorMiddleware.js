@@ -4,7 +4,7 @@ const errorHandler =  (error, request, response, next) => {
 	response.status(statusCode)
 
 	response.json({
-		message : error.message,
+		message : `Please field the text feild`,
 		stack : process.env.NODE_ENV === 'production' ? null : error.stack // more things , when project in production error is not send
 	})
 }
