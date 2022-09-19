@@ -6,7 +6,7 @@ const app = express();
 
 //routes start
 app.get('/api/goals',(req,res) => {
-	res.json({message : 'GET GOALS'});
+	res.status(200).json({message : 'GET GOALS'});
 })
 
 app.listen(port, () => console.log(`Server start on port ${port}`));
