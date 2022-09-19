@@ -12,7 +12,8 @@ const getGoals = (req,res) => {
 //@access Private
 const setGoals = (req,res) => {
 	if(!req.body.text){
-		res.status(400).json({message : `Please add a text field`}); // client bad request
+		res.status(400); // client bad request
+		throw new Error('Please add a text field'); // 	express error handler
 	}
 }
 
