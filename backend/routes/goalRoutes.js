@@ -1,10 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const {getGoals} = require('../controllers/goalController'); //import getGoals function from controller
 
 //goalRoutes show route
-router.get('/',(req,res) => {
-	res.status(200).json({message : 'GET GOALS'});
-});
+router.get('/',getGoals);
 
 
 //goalRoutes create route
