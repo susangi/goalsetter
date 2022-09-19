@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="489ec12c-2693-4125-957d-f6d6a8c1b685" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/goalController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/goalController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +68,7 @@
       <workItem from="1663559174989" duration="1415000" />
       <workItem from="1663560692751" duration="8971000" />
       <workItem from="1663569860408" duration="2446000" />
-      <workItem from="1663572781400" duration="4125000" />
+      <workItem from="1663572781400" duration="5358000" />
     </task>
     <servers />
   </component>
