@@ -3,6 +3,9 @@ const dotenv = require('dotenv').config();
 const {errorHandler} = require('./middleware/errorMiddleware');
 const port = process.env.PORT || 5000; // get port from env or not setup env get 5000 port
 const colors = require('colors'); // color plugin
+const connectDb = require('./config/db');
+
+connectDb();
 
 const app = express();
 
