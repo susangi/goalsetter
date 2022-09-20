@@ -20,6 +20,11 @@ const setGoals = asyncHandler(async (req,res) => {
 		res.status(400); // client bad request
 		throw new Error('Please add a text field'); // 	express error handler
 	}
+	const goal = await Goal.create ({
+		text : req.body.text
+	})
+
+	res.status(200).json(goal)
 });
 
 
