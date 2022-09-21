@@ -17,6 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 
 //export goalRoutes
 app.use('/api/goals', require('./routes/goalRoutes'));
+app.use('/api/users', require('./routes/UserRoutes'));
 
 //error handler middleware
 app.use (errorHandler);
